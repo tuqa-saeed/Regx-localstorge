@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-content">
+            <div class="logo">
+                <img src="IMG/logo.png" alt="logo" width="90px" height="90px">
+            </div>
+            <h1>Welcome to My Registration File</h1>
+        </div>
+        <div class="right-content">
+            <div class="form">
+                <h2>Create an account</h2>
+                <form id="registrationForm">
+                    <input type="text" id="fullName" placeholder="Full name" required>
+                    <input type="email" id="email" placeholder="Email example.email@gmail.com" required>
+                    <div class="password-input">
+                        <input type="password" id="password" placeholder="Enter at least 8+ characters" required>
+                        <span class="toggle-password" onclick="togglePassword()">
+                            <img src="" alt="" id="eyeIcon"> 
+                        </span>
+                    </div>
+                    <button type="submit" id="registerButton">Sign up</button>
+                </form>
+                <p id="successMessage" style="color: green;"></p>
+                <p class="signin-link">Been here before? <a href="#">Sign in</a></p>
+                <div class="or-signin">
+                    <p>Or sign in with</p>
+                    <button class="google-signin">G</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>
